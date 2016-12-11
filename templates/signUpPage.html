@@ -1,0 +1,26 @@
+<ion-view title="Signup" hide-nav-bar="true" cache-view="false" nav-transition="none">
+  <ion-content padding="true" style="background: url(https://s3.amazonaws.com/ionic-io-static/VKhmfWMlRWWa2Mgh6Woq_z-y6i45f9kq-ernest-porzi.jpg) no-repeat center;background-size:cover;" class="manual-ios-statusbar-padding" scroll="false">
+    <form class="list">
+      <div class="spacer" style="width: 300px; height: 151px;"></div>
+
+      <ion-list>
+        <label class="item item-input">
+          <span class="input-label" >Name</span>
+          <input type="text" placeholder="" ng-model="name" />
+        </label>
+        <label class="item item-input">
+          <span class="input-label" >Email</span>
+          <input type="text" placeholder="" ng-model="email" />
+        </label>
+        <label class="item item-input">
+          <span class="input-label" >Password</span>
+          <input type="password" placeholder="" ng-model="password" />
+        </label>
+      </ion-list>
+
+      <div class="spacer" style="width: 300px; height: 14px;"></div>
+      <a  class="button button-stable  button-block" ng-click="addUser(name, email, password)">Sign Up</a>
+      <a ui-sref="loginPage" class="button button-positive  button-block button-clear">Already have an Account?</a>
+    </form>
+  </ion-content>
+</ion-view>

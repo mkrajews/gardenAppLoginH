@@ -1,0 +1,127 @@
+{
+  "city": {
+    "id": 5780026,
+    "name": "Provo",
+    "coord": {
+      "lon": -111.658531,
+      "lat": 40.233841
+    },
+    "country": "US",
+    "population": 0
+  },
+  "cod": "200",
+  "message": 0.3248,
+  "cnt": 5,
+  "list": [{
+    "dt": 1481396400,
+    "temp": {
+      "day": 47.98,
+      "min": 32.47,
+      "max": 48.67,
+      "night": 32.47,
+      "eve": 43.38,
+      "morn": 44.6
+    },
+    "pressure": 836.16,
+    "humidity": 91,
+    "weather": [{
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01d"
+    }],
+    "speed": 2.91,
+    "deg": 175,
+    "clouds": 88,
+    "rain": 12.5,
+    "snow": 0.01
+  }, {
+    "dt": 1481482800,
+    "temp": {
+      "day": 31.62,
+      "min": 21.52,
+      "max": 34.2,
+      "night": 21.52,
+      "eve": 31.46,
+      "morn": 29.86
+    },
+    "pressure": 837.4,
+    "humidity": 100,
+    "weather": [{
+      "id": 601,
+      "main": "Snow",
+      "description": "snow",
+      "icon": "13d"
+    }],
+    "speed": 2.64,
+    "deg": 159,
+    "clouds": 68,
+    "snow": 2.03
+  }, {
+    "dt": 1481569200,
+    "temp": {
+      "day": 32.5,
+      "min": 18.14,
+      "max": 36.3,
+      "night": 25.27,
+      "eve": 31.96,
+      "morn": 18.14
+    },
+    "pressure": 835.44,
+    "humidity": 77,
+    "weather": [{
+      "id": 804,
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04d"
+    }],
+    "speed": 3.83,
+    "deg": 217,
+    "clouds": 88
+  }, {
+    "dt": 1481655600,
+    "temp": {
+      "day": 36.52,
+      "min": 30.47,
+      "max": 38.66,
+      "night": 33.96,
+      "eve": 38.66,
+      "morn": 30.47
+    },
+    "pressure": 822.68,
+    "humidity": 0,
+    "weather": [{
+      "id": 501,
+      "main": "Rain",
+      "description": "moderate rain",
+      "icon": "10d"
+    }],
+    "speed": 3.98,
+    "deg": 214,
+    "clouds": 96,
+    "rain": 11.55
+  }, {
+    "dt": 1481742000,
+    "temp": {
+      "day": 32.49,
+      "min": 25.38,
+      "max": 33.03,
+      "night": 25.38,
+      "eve": 31.28,
+      "morn": 33.03
+    },
+    "pressure": 829.92,
+    "humidity": 0,
+    "weather": [{
+      "id": 600,
+      "main": "Snow",
+      "description": "light snow",
+      "icon": "13d"
+    }],
+    "speed": 2.82,
+    "deg": 10,
+    "clouds": 60,
+    "rain": 1.07,
+    "snow": 0.91
+  }]
+}

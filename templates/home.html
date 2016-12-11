@@ -1,0 +1,84 @@
+<ion-view title="Home" id="page2">
+  <ion-content padding="true" class="has-header">
+    <form id="home-form1" class="list">
+      <label class="item item-input" id="home-search1">
+              <i class="icon ion-search placeholder-icon"></i>
+              <input ng-
+              type="search" placeholder="What do you want to grow?">
+          </label>
+
+      <!--  BUTTONS   -->
+      <span><button id="home-button8" class="button button-balanced " ng-click="getPlant()">Search</button></span>
+
+      <span><button id="home-button8" class="button button-balanced " ng-click="getPlant()">Browse</button></span>
+    </form>
+    {{test}}
+    <!-- IMAGE CONTAINER -->
+    <!-- <div id="home-container1">
+        <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
+          <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
+        </div> -->
+
+    <div class="item item-body" id="home-list-item-container2" ng-repeat="plant in plants">
+      <img ng-click="openModal(plant)" style="margin-left: 85px; margin-top: 30px; height: 150px; width: 150px; border-radius: 50%; text-align: center; " src="{{plant.image}}" alt="">
+      <h1 id="home-heading2" style="color:#000000;text-align:center;">
+              <br>{{plant.name}}</h1>
+      <div id="home-markdown4" class="show-list-numbers-and-dots">
+        <p style="margin-top:0px;color:#000000;">{{plant.description}}
+          <strong></strong>
+        </p>
+      </div>
+    </div>
+
+    <!-- ION LIST SECTION-->
+    <!-- <ion-list id="home-list5">
+            <ion-item id="home-list-item14">Item</ion-item>
+            <ion-item id="home-list-item10">Item</ion-item>
+        </ion-list> -->
+
+
+    </div>
+  </ion-content>
+
+  <!-- MODAL STARTS HERE: -->
+  <script id="my-modal.html" type="text/ng-template">
+    <ion-modal-view>
+      <ion-header-bar>
+        <div class="buttons">
+          <h1 class="title">{{singlePlant.name}}</h1>
+
+          <button class="button button-icon ion-ios-close-empty" ng-click="closeModal()">
+              </button>
+        </div>
+      </ion-header-bar>
+
+      <ion-content>
+        <div class="item item-body" id="home-list-item-container2">
+          <img style="margin-left: 85px; margin-top: 30px; height: 150px; width: 150px; border-radius: 50%; text-align: center; " src="{{singlePlant.image}}" alt="">
+
+          <strong>Optimal Sun:</strong><br> {{singlePlant.optimal_sun}} <br><br>
+          <strong>Watering:</strong><br> {{singlePlant.watering}}
+          <br><br>
+          <strong>Planting Considerations:</strong><br> {{singlePlant.planting_considerations}}
+          <br><br>
+          <strong>Plant Spacing:</strong><br> {{singlePlant.spacing}}
+          <br><br>
+          <strong>Feeding:</strong><br> {{singlePlant.feeding}}
+          <br><br>
+          <strong>Harvesting:</strong><br> {{singlePlant.harvesting}}<br><br>
+          <strong>Diseases:</strong><br> {{singlePlant.diseases}}
+          <br><br>
+          <strong>OtherCare:</strong><br> {{singlePlant.other_care}}
+          <br><br>
+        </div>
+
+        <button id="home-button10" class="button button-positive  button-block" ng-click="addToGarden()">
+       Add to Garden
+       </button>
+
+      </ion-content>
+    </ion-modal-view>
+  </script>
+
+
+</ion-view>

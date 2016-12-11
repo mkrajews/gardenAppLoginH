@@ -1,0 +1,38 @@
+<ion-view title="Weather" id="page4">
+  <ion-content padding="true" class="has-header">
+    <div class="spacer" style="width: 300px; height: 23px;"></div>
+
+    <!-- ION SLIDER SECTION -->
+    <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider1" id="weather-slider1" style="width:100%;height:200px;">
+      <ion-slide-page id="weather-slide24" style="background:url(img/avfsZwJT9WGsBj982ul1_kitten1.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+      <ion-slide-page id="weather-slide25" style="background:url(img/gHd5vedGQJu4s4qsPQvr_kitten2.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+      <ion-slide-page id="weather-slide26" style="background:url(img/WE6rB9dZRTiIWQlP5qsA_kitten3.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+    </ion-slides>
+
+    <form id="weather-form4" class="list">
+      <div class="spacer" style="width: 300px; height: 27px;"></div>
+      <label class="item item-input" id="weather-search2">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="">
+      </label>
+    </form>
+
+    <!-- BUTTON -->
+    <div>
+      <button id="weather-button9" class="button button-positive  button-block" ng-click="getWeather()">
+        Search
+      </button>
+
+      <div class="item item-body" id="weather-list-item-container1" ng-repeat="weather in weather">
+        <div id="weather-markdown2" class="show-list-numbers-and-dots">
+          <p style="text-align: center; margin-top:0px;color:#000000;">
+            <strong>
+            {{weather.list[3].temp}}
+          </strong>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
